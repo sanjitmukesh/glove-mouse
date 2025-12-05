@@ -5,6 +5,9 @@ A wearable glove that replaces the traditional computer mouse using an Arduino P
 ## Overview
 The Glove Mouse translates 3D hand motion into 2D cursor movement. It uses gyroscope data to detect rotation and an algorithm to stabilize drift. Four mechanical switches simulate mouse clicks, and an extra button lets the user re-center the cursor.
 
+![final_glove_palm_down](images/final_glove_palm_down.jpg)
+![final_glove_palm_up](images/final_glove_palm_up.jpg)
+
 ## Components
 - Arduino Pro Micro (ATmega32U4)
 - MPU-6050 IMU sensor
