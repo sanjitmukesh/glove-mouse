@@ -1,22 +1,24 @@
 # Glove Mouse
 
-A wearable glove that replaces the traditional computer mouse using an Arduino Pro Micro and MPU-6050 sensor. It detects hand motion and orientation to move the cursor, with buttons for clicks and a re-center function.
+A wearable glove alternative to the traditional computer mouse using an Arduino Pro Micro and MPU-6050 sensor. It detects hand motion and orientation to move the cursor, with buttons for clicks and a re-center button.
 
 ## Overview
-The Glove Mouse translates 3D hand motion into 2D cursor movement. It uses gyroscope data to detect rotation and an algorithm to stabilize drift. Four mechanical switches simulate mouse clicks, and an extra button lets the user re-center the cursor.
-
-![final_glove_palm_down](images/final_glove_palm_down.jpg)
-![final_glove_palm_up](images/final_glove_palm_up.jpg)
+The Glove Mouse is designed as both an accessibility-focused device and an enhancement to standard mouse input. Instead of dragging a mouse across a surface, users simply rotate their hand in 3D space. Gyroscope data is processed into stable 2D cursor motion using deadzones, filtering, and drift-correction. Mechanical switches provide reliable left-click, right-click, scroll/middle-click, and re-centering. This design reduces wrist strain, avoids repetitive motions that contribute to carpal tunnel syndrome, and enables more intuitive interaction modes than a traditional 2D mouse.
+<p align="center">
+  <img width="350" alt="Glove palm-down" src="images/final_glove_palm_down.jpg" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img width="350" alt="Glove palm-up" src="images/final_glove_palm_up.jpg" />
+</p>
 
 ## Components
 - Arduino Pro Micro (ATmega32U4)
 - MPU-6050 IMU sensor
 - 4 mechanical switches
-- Glove
+- Glove for mounting hardware
 - Flexible wiring, hot glue
 
 ## Features
 - 3D motion tracking → smooth, drift-free cursor movement  
-- Left-click, right-click, re-center, and scroll buttons  
-- USB HID mouse functionality (no extra software required)  
+- Left-click, right-click, scroll, and re-center buttons  
+- USB HID → works as a native mouse on any computer  
 - Comfortable wearable design
